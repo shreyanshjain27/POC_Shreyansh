@@ -1,5 +1,13 @@
 {
 	"name": "grcdsb-cp-df-01",
+	"properties": {
+		"globalParameters": {
+			"URL": {
+				"type": "string",
+				"value": "https://learn.microsoft.com/en-us/azure/data-factory/source-control"
+			}
+		}
+	},
 	"location": "eastus2",
 	"identity": {
 		"type": "SystemAssigned",
