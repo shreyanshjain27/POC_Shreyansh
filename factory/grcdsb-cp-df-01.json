@@ -1,0 +1,9 @@
+{
+	"name": "grcdsb-cp-df-01",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "04fdc146-8268-4dab-a3d6-5f1262213142",
+		"tenantId": "971f0e31-00d6-4e42-b8e0-47b342bc4455"
+	}
+}

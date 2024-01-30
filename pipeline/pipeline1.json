@@ -1,0 +1,28 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@int(pipeline().parameters.waitTime)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"waitTime": {
+				"type": "string",
+				"defaultValue": "2"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-09-06T05:25:58Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

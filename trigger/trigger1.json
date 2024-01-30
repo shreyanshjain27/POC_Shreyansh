@@ -1,0 +1,27 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"waitTime": "@triggerBody().event.data.waitTime"
+				}
+			}
+		],
+		"type": "CustomEventsTrigger",
+		"typeProperties": {
+			"subjectEndsWith": "",
+			"subjectBeginsWith": "test-subject",
+			"scope": "/subscriptions/e5b68184-5229-45df-93d8-b04d80de61f8/resourceGroups/grcdsb-rcdtest-rg-01/providers/Microsoft.EventGrid/topics/grcdsb-cdp-event-grid",
+			"events": [
+				"test-event"
+			]
+		}
+	}
+}
