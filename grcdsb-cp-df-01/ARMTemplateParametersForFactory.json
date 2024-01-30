@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "grcdsb-cp-df-01"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"Microsoft3651_servicePrincipalKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://testaccout.dfs.core.windows.net/"
+		},
+		"Microsoft3651_properties_typeProperties_servicePrincipalId": {
+			"value": "e8f4bcfa-89b3-41a8-8f9b-2ef492af4a4c"
+		},
+		"trigger1_properties_pipeline1_parameters_waitTime": {
+			"value": "@triggerBody().event.data.waitTime"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/e5b68184-5229-45df-93d8-b04d80de61f8/resourceGroups/grcdsb-rcdtest-rg-01/providers/Microsoft.EventGrid/topics/grcdsb-cdp-event-grid"
+		}
+	}
+}
